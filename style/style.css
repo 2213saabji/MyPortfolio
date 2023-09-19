@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between  ;
+    margin-top: 25px;
+}
+header .leftnav{
+    font-weight: 500;
+    word-spacing: 80px;
+    margin-left: 80px;
+    }
+header .logo{
+    padding: 0px 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+header .rightnav{
+    margin-right: 80px;
+    background-color: lightgrey;
+    padding: 5px 10px 0px;
+    border-radius: 50px;
+    height: 27px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
