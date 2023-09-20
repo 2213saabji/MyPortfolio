@@ -38,8 +38,19 @@ header .logo{
     border-radius: 50%;
     font-size: 40px;
     font-weight: 700;
+    transition-duration: 10s;
+}
+header .logo:hover{
+    animation: scalee 10s linear 0s 1 ;
 
 }
+@keyframes scalee {
+    0%{transform: scale(1);}
+    50%{transform: scale(250);}
+    100%{transform: scale(1);}
+}
+
+
 header .rightnav{
     margin-right: 80px;
     background-color: lightgrey;
@@ -49,9 +60,12 @@ header .rightnav{
     
 }
 header .rightnav a{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     
+}
+header .rightnav:hover{
+    background-color: rgb(141, 141, 141);
 }
 header .leftnav a:hover{
     color: rgb(99, 99, 99);
@@ -86,6 +100,9 @@ width: 400px;
     border-radius: 50px;
     font-size: 14px;
     color: white;
+}
+#home .lefthome > a:hover{
+    background-color: rgb(254, 106, 53);
 }
 #home .language{
     margin-top: 60px;
@@ -137,7 +154,7 @@ width: 400px;
     background-color: rgb(254, 91, 2);
 }
 #home .righthome .img{
-    transform: rotate(45deg);
+    transform: rotate(55deg);
 }
 #home .img{
     height: 400px;
@@ -165,7 +182,11 @@ width: 400px;
     67%{transform: rotateX(-40deg) rotateY(-20deg);}
     100%{transform: rotateX(0deg) rotateY(0deg);}
 }
-
+#home .img:hover img{
+  animation:none;
+  transition: none;
+  transform: none;
+}
 #projects{
     height: 80vh;
     padding: 100px 10%;
@@ -295,14 +316,14 @@ width: 400px;
         20%{ stroke-dashoffset: 290px;}
         30%{ stroke-dashoffset: 250px;}
         80%{ stroke-dashoffset: 220px;}
-        100%{ stroke-dashoffset: 100px;}
+        100%{ stroke-dashoffset: 150px;}
 }
 @keyframes prog2 {
         0%{ stroke-dashoffset: 300px;}
         20%{ stroke-dashoffset: 290px;}
         30%{ stroke-dashoffset: 250px;}
         80%{ stroke-dashoffset: 220px;}
-        100%{ stroke-dashoffset: 150px;}
+        100%{ stroke-dashoffset: 100px;}
 }
 @keyframes prog3 {
         0%{ stroke-dashoffset: 300px;}
@@ -343,8 +364,11 @@ width: 400px;
     margin-top: 100px;
 }
 
-#about .barcard3,.barcard1{
+#about .barcard1{
     margin-top: 200px;
+}
+#about .barcard3{
+    margin-top: 190px;
 }
 
 #about .infoclient{
@@ -371,7 +395,7 @@ width: 400px;
 /* ---------Contact------------ */
 
 #contact{
-    height: 40vh;
+    height: 30vh;
     padding: 100px 10%;
     /* border: 2px solid black; */
 }
@@ -394,3 +418,4 @@ width: 400px;
     font-size: 30px;
     margin-left: 20px;
 }
+
