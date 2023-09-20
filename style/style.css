@@ -3,6 +3,13 @@
     border: 0;
     margin: 0;
     font-family: 'Jura', sans-serif;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -10,15 +17,20 @@ a{
 }
 
 header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
     display: flex;
     justify-content: space-between  ;
     margin-top: 25px;
+    z-index: 1000;
 }
 header .leftnav{
     font-weight: 500;
     word-spacing: 80px;
     margin-left: 80px;
-    }
+}
 header .logo{
     padding: 0px 10px;
     background-color: rgb(30, 30, 30);
@@ -31,10 +43,330 @@ header .logo{
 header .rightnav{
     margin-right: 80px;
     background-color: lightgrey;
-    padding: 5px 10px 0px;
+    padding: 5px 20px 0px;
     border-radius: 50px;
     height: 27px;
-    font-size: 15px;
+    
+}
+header .rightnav a{
+    font-size: 10px;
+    font-weight: 700;
+    
+}
+header .leftnav a:hover{
+    color: rgb(99, 99, 99);
+}
+#home{
+    height: 70vh;
+    width: 100%;
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+#home .lefthome{
+margin-left: 10%;
+width: 400px;
+/* border: 2px solid black; */
+}
+#home .lefthome h1{
+    font-size: 60px;
     font-weight: 400;
 }
+#home .lefthome h1 span{
+    font-weight: bold;
+}
+#home .lefthome p{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#home .lefthome > a{
+    background-color: orangered;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: white;
+}
+#home .language{
+    margin-top: 60px;
+}
+#home .box1 , .box2{
+    display: flex;  
+}
+#home .language .white{
+    color: white;
+}
+#home .box2{
+    margin-top: -45px;
+}
+#home .language .css{
+    background-color: rgb(255, 142, 61);
+    padding: 3px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+#home .language .html{
+    background-color: rgb(251, 105, 0);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+#home .language .java{
+    background-color: rgb(36, 31, 33);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+#home .language .javascript{
+    background-color: rgb(225, 225, 225);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
 
+#home .righthome{
+    width: 37%;
+}
+#home .righthome .color{
+    width: 800px;
+    transform: rotate(-45deg);
+    translate: -45px -130px;
+    border-radius: 250px 0px 0px 250px;
+    background-color: rgb(254, 91, 2);
+}
+#home .righthome .img{
+    transform: rotate(45deg);
+}
+#home .img{
+    height: 400px;
+    width: 400px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    transform: rotateY(-50deg);
+}
+#home .img img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(-50deg);
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 80% 0%;
+
+}
+@keyframes animate{
+    0%{transform: rotateX(0deg) rotateY(0deg);}
+    15%{transform: rotateX(20deg) rotateY(20deg);}
+    35%{transform: rotateX(0deg) rotateY(0deg);}
+    67%{transform: rotateX(-40deg) rotateY(-20deg);}
+    100%{transform: rotateX(0deg) rotateY(0deg);}
+}
+
+#projects{
+    height: 80vh;
+    padding: 100px 10%;
+}
+#projects .heading{
+    display: flex;
+    justify-content: space-between;
+}
+#projects .heading .right a{
+    display: flex;
+    gap: 20px;
+}
+#projects .heading .right i{
+    font-size: 25px;
+}
+#projects .carddiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+#projects .card{
+    width: 250px;
+    height: 300px;
+    /* background-color: lightgrey; */
+    border-radius: 15px;
+}
+#projects .card2{
+    margin-top: 100px;
+}
+#projects .card3{
+    margin-top: 200px;
+}
+#projects .img1{
+    background-image: url(../assets/img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:-20px -2px;
+    
+    width: 100%;
+    height: 70%;
+    border-radius: 16px;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+#projects .img2{
+    background-image: url(../assets/img/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    width: 100%;
+    height: 70%;
+    border-radius: 16px;
+    box-shadow: 2px 2px 15px lightgrey;
+    /* border: 2px solid red; */
+}
+#projects .img3{
+    background-image: url(../assets/img/3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    width: 100%;
+    height: 70%;
+    border-radius: 16px;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+#projects .card>p{
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+#projects .img{
+    position: relative;
+}
+#projects .count{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+}
+#projects .card:hover .img{
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;   
+}
+
+/* ---------svg--------- */
+
+svg{
+    width: 200px;
+    height: 200px;
+}
+svg circle{
+    fill: none;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+svg circle .bg{
+    stroke:#4e4e4e;
+    
+}
+svg circle.meter{
+    stroke:#ff7a59;
+    stroke-dashoffset: 300px;
+    stroke-dasharray: 300px;
+}
+svg circle.meter1{
+    animation: prog1 10s linear forwards , glow 1s 9s ease-in-out forwards;
+    
+}
+svg circle.meter2{
+    animation: prog2 10s linear forwards , glow 1s 9s ease-in-out forwards;
+
+}
+svg circle.meter3{
+    animation: prog3 10s linear forwards , glow 1s 9s ease-in-out forwards;
+
+}
+@keyframes prog1 {
+        0%{ stroke-dashoffset: 300px;}
+        20%{ stroke-dashoffset: 290px;}
+        30%{ stroke-dashoffset: 250px;}
+        80%{ stroke-dashoffset: 220px;}
+        100%{ stroke-dashoffset: 100px;}
+}
+@keyframes prog2 {
+        0%{ stroke-dashoffset: 300px;}
+        20%{ stroke-dashoffset: 290px;}
+        30%{ stroke-dashoffset: 250px;}
+        80%{ stroke-dashoffset: 220px;}
+        100%{ stroke-dashoffset: 150px;}
+}
+@keyframes prog3 {
+        0%{ stroke-dashoffset: 300px;}
+        20%{ stroke-dashoffset: 290px;}
+        30%{ stroke-dashoffset: 250px;}
+        80%{ stroke-dashoffset: 220px;}
+        100%{ stroke-dashoffset: 200px;}
+}
+
+@keyframes glow {
+    100%{
+        filter: drop-shadow(0 0 3px #ff7a59);
+    }    
+}
+#about{
+    padding: 100px 10%;
+    /* border: 2px solid black; */
+    height: 200vh;
+}
+#about .skills{
+    display: flex;
+    justify-content: space-between;
+}
+#about .barcard{
+    position: relative;
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .barcard>p{
+    position: absolute;
+    font-weight: 700;
+}
+#about .skills{
+    margin-top: 100px;
+}
+
+#about .barcard3,.barcard1{
+    margin-top: 200px;
+}
+
+#about .infoclient{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+#about .block{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+}
+#about .block2, #about .block4{
+    margin-top: 200px;
+}
+#about .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey;
+        color: rgb(36, 31, 33);
+        font-weight: 700;
+        border-radius: 5px;
+}

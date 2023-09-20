@@ -6,23 +6,120 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="./json/style.js"></script>
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/4c7b206b90.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="maincontainer">
         <header>
             <div class="leftnav">
-                <a href="#">About</a>
+                <a href="#about">About</a>
                 <a href="#home">Portfolio</a>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
             </div>
             <div class="logo">G</div>
             <div class="rightnav">
                 <a href="#">Contact Me</a>
             </div>
         </header>
-        <div class="home">
-
+        <div id="home">
+            <div class="lefthome">
+                <h1>My name<br> is <span>Gurpreet</span></h1>
+                <p>I am a fresher programmer but very honest towards my work.</p>
+                <a href="#">Hire Me</a>
+                <div class="language">
+                    <div class="box1">
+                    <p class="css">css</p>
+                    <p class="html white">html</p>
+                    </div>
+                    <div class="box2">
+                    <p class="java white">java</p>
+                    <p class="javascript">javascript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="righthome">
+                <div class="color">
+                    <div class="img">
+                        <img src="./assets/img/my.jpg" alt="profile">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="projects">
+            <div class="heading">
+                <h1>Latest Projects</h1>
+                <div class="right">
+                    <a href="#"><p>All projects</p>
+                    <i class="fa-solid fa-sliders"></i></a>
+                </div>
+            </div>
+            <div class="carddiv">
+                <a href="https://2213saabji.github.io/collageproject/">
+                <div class="card card1">
+                    <div class="img1 img">
+                        <div class="count">
+                            <p>01</p>
+                        </div>
+                    </div>
+                    <p>Shop-now.in</p>
+                </div>
+                </a>
+                <a href="https://2213saabji.github.io/firstwebsitenewton/">
+                <div class="card card2">
+                    <div class="img2 img">
+                        <div class="count">
+                            <p>02</p>
+                        </div>
+                    </div>
+                    <p>Frontend Mentor</p>
+                </div>
+                </a>
+                <a href="https://2213saabji.github.io/6to7ClassFirstPoject/">
+                <div class="card card3">
+                    <div class="img3 img">
+                        <div class="count">
+                            <p>03</p>
+                        </div>
+                    </div>
+                    <p>LUGX</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div id="about">
+            <h1>My Skills</h1><br>
+            <hr style="width: 180px; height: 2px; background-color: black;">
+            <div class="skills">
+                <div class="barcard barcard1">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg" cx="50" cy="50" r="40"/>
+                        <circle class="meter meter1" cx="50" cy="50" r="40"/>
+                    </svg>
+                    <p>Web Development</p>
+                </div>
+                <div class="barcard barcard2">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg" cx="50" cy="50" r="40"/>
+                        <circle class="meter meter2" cx="50" cy="50" r="40"/>
+                    </svg>
+                    <p>Video Editing</p>
+                </div>
+                <div class="barcard barcard3">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg" cx="50" cy="50" r="40"/>
+                        <circle class="meter meter3" cx="50" cy="50" r="40"/>
+                    </svg>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="infoclient">
+                <div class="block1 block"><p>11+</p><p>PARTNERS</p></div>
+                <div class="block2 block"><p>55+</p><p>PROJECTS DONE</p></div>
+                <div class="block3 block"><p>89+</p><p>HAPPY CLIENTS</p></div>
+                <div class="block4 block"><p>150+</p><p>MEETINGS</p></div>
+            </div>
         </div>
     </div>
 </body>
