@@ -157,11 +157,12 @@ width: 400px;
     translate: -45px -130px;
     border-radius: 250px 0px 0px 250px;
     background-color: rgb(254, 91, 2);
+    box-shadow: -5px 0px 15px 10px lightgrey;
     /* border: 2px solid black; */
 }
 #home .righthome .img{
     /* border: 2px solid black; */
-    transform: rotate(55deg);
+    transform: rotate(45deg);
 }
 #home .img{
     height: 400px;
@@ -169,6 +170,7 @@ width: 400px;
     perspective: 800px;
     transform-style: preserve-3d;
     transform: rotateY(-50deg);
+    
 }
 #home .img img{
     border-radius: 50%;
